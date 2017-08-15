@@ -23,7 +23,7 @@ namespace Lab05Op
             {
                 item.TouchUpInside += (object sender, EventArgs e) =>
                 {
-                    LblAffichage.Text = (LblAffichage.Text == "0")? LblAffichage.Text + item.TitleLabel.Text.Substring(1) : LblAffichage.Text + item.TitleLabel.Text;
+                    LblAffichage.Text = (LblAffichage.Text == "0")? (LblAffichage.Text + item.TitleLabel.Text).Substring(1) : LblAffichage.Text + item.TitleLabel.Text;
                 };
             }
         }
