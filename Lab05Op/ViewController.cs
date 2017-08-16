@@ -14,18 +14,22 @@ namespace Lab05Op
         {
             base.ViewDidLoad();
 
+            // V 2.0
+            // Prepara para otra solucion
+
+            // V 1.0
             // Después de cargar la vista 
             // recuperamos los botones en un array
             // iteramos para añadir los manejadores de evento.
-            UIButton[] Botones = new UIButton[] { Btn_zero, Btn_1, Btn_2, Btn_3, Btn_4, Btn_5, Btn_6, Btn_7, Btn_8, Btn_9 };
+            //UIButton[] Botones = new UIButton[] { Btn_zero, Btn_1, Btn_2, Btn_3, Btn_4, Btn_5, Btn_6, Btn_7, Btn_8, Btn_9 };
 
-            foreach (var item in Botones)
-            {
-                item.TouchUpInside += (object sender, EventArgs e) =>
-                {
-                    LblAffichage.Text = (LblAffichage.Text == "0")? (LblAffichage.Text + item.TitleLabel.Text).Substring(1) : LblAffichage.Text + item.TitleLabel.Text;
-                };
-            }
+            //foreach (var item in Botones)
+            //{
+            //    item.TouchUpInside += (object sender, EventArgs e) =>
+            //    {
+            //        LblAffichage.Text = (LblAffichage.Text == "0")? (LblAffichage.Text + item.TitleLabel.Text).Substring(1) : LblAffichage.Text + item.TitleLabel.Text;
+            //    };
+            //}
         }
 
         public override void DidReceiveMemoryWarning()
